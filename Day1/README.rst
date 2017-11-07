@@ -1,0 +1,69 @@
+Requirements and installation
+===============
+The pipeline is mainly written in python and it has the following dependencies:
+
+* numpy, matplotlib
+* astropy, ephem, pyslalib, healpy (astro libs)
+* f2py, weave (interfacing with python)
+
+While we use python 2.7, we try to make it compatible with python 3.x.
+If you are using python 3.x and you encounter an error, please open an issue or a
+pull request so that we fix it asap.
+
+Some parts of the pipeline are written in C (and compiled on-the-fly via the
+package weave), and in Fortran (to come). The latter is interfaced with
+python using f2py. The compilation is done usually when you install the
+package (see setup.py), but we also provide a Makefile for more
+customized compilations (see the Makefile in s4cmb).
+
+Installation
+===============
+You can easily install the package using pip
+
+::
+
+    pip install s4cmb
+
+For the purpose of this tutorial, we rather recommend that you fork the repo from
+the github repository and clone it to your machine (to be able to modify the code on your own).
+Use the makefile to compile the source
+
+::
+
+    cd /path/to/s4cmb
+    make
+
+Do not forget to update your PYTHONPATH to tell your machine where the code is.
+For example, just add at the end of your bashrc:
+
+::
+
+    s4cmbPATH=/path/to/the/package
+    export PYTHONPATH=$PYTHONPATH:$s4cmbPATH
+
+Then run the test suite and the coverage:
+
+::
+
+    ./coverage_and_test.sh
+
+It should exit with no errors.
+
+Installation using Docker
+===============
+Alternatively if you do not want install the package on your computer,
+we provide a docker image for s4cmb with always the latest version. Install
+docker on your computer, and pull the image:
+
+::
+
+    docker pull julienpeloton/s4cmb:latest
+
+Then create a new container and run an interactive session by just running
+
+::
+
+    docker run -i -t julienpeloton/s4cmb:latest bash
+
+First example
+===============
