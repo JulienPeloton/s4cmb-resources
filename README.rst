@@ -13,6 +13,6 @@ Cosmic Microwave Background experiments.
 
 Structure of the tutorial
 ===============
-Day 1: installation + presentation of the code + my first App.
-Day 2: Digging into the library: more complex cases.
-Day 3: Question/Answer session based on Day 2 findings.
+* Day 1: installation + presentation of the code + my first App.
+* Day 2: Digging into the library: more complex cases.
+* Day 3: Question/Answer session based on Day 2 findings.

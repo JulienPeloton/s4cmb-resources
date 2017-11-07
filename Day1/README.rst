@@ -24,7 +24,7 @@ You can easily install the package using pip
 
     pip install s4cmb
 
-For the purpose of this tutorial, we rather recommend that you fork the repo from
+Instead for the purpose of this tutorial, we rather recommend that you fork the repo from
 the github repository and clone it to your machine (to be able to modify the code on your own).
 Use the makefile to compile the source
 
