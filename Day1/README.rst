@@ -65,5 +65,13 @@ Then create a new container and run an interactive session by just running
 
     docker run -i -t julienpeloton/s4cmb:latest bash
 
-First example
+Lectures
 ===============
+Day1 is organised the following:
+* Lecture 01: presentation of the library.
+* Lecture 02: how to generate an instrument.
+* Lecture 03: how to generate a scanning strategy.
+* Lecture 04: how to generate TOD.
+* Lecture 05: An example of instrument systematic.
+
+In addition, you will find an end-to-end example that can be run on a laptop.
