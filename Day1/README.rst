@@ -68,6 +68,7 @@ Then create a new container and run an interactive session by just running
 Lectures
 ===============
 Day1 is organised the following:
+
 * Lecture 01: presentation of the library.
 * Lecture 02: how to generate an instrument.
 * Lecture 03: how to generate a scanning strategy.
