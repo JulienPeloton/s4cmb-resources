@@ -75,4 +75,4 @@ Day1 is organised the following:
 * Lecture 04: how to generate TOD.
 * Lecture 05: An example of instrument systematic.
 
-In addition, you will find an end-to-end example that can be run on a laptop.
+In addition, you will find an end-to-end example that can be ran on a laptop.
