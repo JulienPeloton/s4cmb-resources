@@ -75,4 +75,14 @@ Day1 is organised the following:
 * Lecture 04: how to generate TOD.
 * Lecture 05: An example of instrument systematic (crosstalk).
 
-In addition, you will find an end-to-end example that can be ran on a laptop.
+In addition, you will find an end-to-end example that can be ran on a laptop
+
+::
+
+    python simple_app.py -inifile simple_parameters.py -tag test
+
+or using 4 processors (change mpirun with your favourite command)
+
+::
+
+    mpirun -n 4 python simple_app.py -inifile simple_parameters.py -tag test
