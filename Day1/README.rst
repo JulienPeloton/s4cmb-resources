@@ -26,7 +26,7 @@ You can easily install the package using pip
 
 Instead for the purpose of this tutorial, we rather recommend that you fork the repo from
 the github repository and clone it to your machine (to be able to modify the code on your own).
-See https://github.com/JulienPeloton/s4cmb/blob/master/CONTRIBUTING.rst for more information on how to contribute.
+See `here <https://github.com/JulienPeloton/s4cmb/blob/master/CONTRIBUTING.rst>`_ for more information on how to contribute.
 Once you have the repo cloned on your machine, use the makefile to compile the source
 
 ::
