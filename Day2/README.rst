@@ -4,7 +4,7 @@ End-to-end examples
 We provide two notebooks focusing on
 
 * `Simulation of gain drifts. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day2/s4cmb_gain_drifts.ipynb>`_
-* Simulation of differential pointing.
+* `Simulation of differential pointing. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day2/s4cmb_differential_pointing.ipynb>`_
 
 Note that on both examples, in addition to scanning pure CMB maps, we also
 inject noise directly in time-domain. For the moment, the noise is assumed to
@@ -36,7 +36,7 @@ Note that the parallelisation happens at the level of CES, that is we send diffe
 to different CPU (or group of CPU). One could benefit from openmp in fortran routines (i.e. hybrid MPI/openmp),
 but I disabled that for the moment. Contact me if you are interested in restoring that.
 
-**Submitting your first job**
+**Submit your first job**
 
 Say you want to launch the simulation for gain drifts. First, connect to Cori, and copy
 MC_lowmemory_gain_drifts_launcher.batch, so_MC_gain_drift.py and so_parameters.py to
