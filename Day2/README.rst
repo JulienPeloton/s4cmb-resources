@@ -3,7 +3,7 @@ End-to-end examples
 
 We provide two notebooks focusing on
 
-* Simulation of gain drifts.
+* `Simulation of gain drifts. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day2/s4cmb_gain_drifts.ipynb>`_
 * Simulation of differential pointing.
 
 Note that on both examples, in addition to scanning pure CMB maps, we also
