@@ -1,4 +1,6 @@
 ## Parameter file to generate SO-like data set
+## Note that you can leave empty parameters if you parse them directly
+## from the application.
 
 ## Run ID - this will be used to create names
 name_instrument = "SO"
@@ -6,12 +8,13 @@ name_instrument = "SO"
 #####################################################################
 ######################### Input sky #################################
 #####################################################################
-## can be two things:
+## can be three things:
 ##  1) Input fits file containing the sky maps to scan (maps will be loaded).
 ##  2) CAMB lensed cl file (.dat) containing lensed power spectra with
 ##      order ell, TT, EE, BB, TE (maps will be created on-the-fly).
 ## /!\ Option 2) is more for test purposes /!\
-input_filename = "/global/cscratch1/sd/peloton/s4cmb/additional_files/SO_v2/IQU_noBB_freq150_large_v2.fits"
+##  3) alm files.
+input_filename = " "
 
 ## Set do_pol to False if you want to load only intensity map.
 do_pol = True
@@ -125,7 +128,7 @@ sampling_freq = 15.
 sky_speed = 0.4
 
 ## File containing time correction to UTC
-ut1utc_fn = "/global/homes/p/peloton/s4cmb/s4cmb/data/ut1utc.ephem"
+ut1utc_fn = "/project/projectdirs/sobs/instrument_systematics/additional_files"
 
 #####################################################################
 ######################### Output sky maps ###########################
