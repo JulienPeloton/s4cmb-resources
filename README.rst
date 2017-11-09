@@ -2,8 +2,9 @@
 s4cmb tutorials
 =============================
 
-.. figure:: https://github.com/JulienPeloton/s4cmb/blob/master/s4cmb/data/intro.png
-    :scale: 25 %
+.. raw:: html
+
+    <img src="https://github.com/JulienPeloton/s4cmb/blob/master/s4cmb/data/intro.png" height="400px">
 
 s4cmb
 ===============
