@@ -8,15 +8,16 @@ We provide two notebooks focusing on
 
 Note that on both examples, in addition to scanning pure CMB maps, we also
 inject noise directly in time-domain. For the moment, the noise is assumed to
-be white, but there is a plan to add correlated noise (see `here <https://github.com/JulienPeloton/s4cmb/projects>`_ ). If you are interested,
-just contact me!
+be white, but there is a plan to add correlated noise
+(see `here <https://github.com/JulienPeloton/s4cmb/projects>`_ ).
+If you are interested, just contact me!
 
 Using s4cmb on a cluster (mpi version)
 ===============
 
 All examples so far focused on very small instruments, with few bolometers.
 Of course, one wants to study current and future experiments with thousands of
-detectors. Keep calm, and use a cluster! We provide two ready-to-use Apps and their
+detectors, and make MC simulations. Keep calm, and use a cluster! We provide two ready-to-use Apps and their
 batch files for Cori (NERSC). Note that the amount of resource needed usually depends on
 what you want to simulate. If your detector timestreams remain uncorrelated, then
 you do not need much memory (you would just load a few objects in the memory at once).
@@ -28,6 +29,19 @@ requires 7000 * 4 * 3600 * 15 * 8 = 12 GB! And this is just for the timestreams
 
 Of course one can always finds clever tricks for particular cases to reduce the memory usage, but
 these cases (fully correlated vs fully uncorrelated) roughly define your bounds.
+
+** Submitting your first job **
+
+Say you want to launch the simulation for gain drifts. First, connect to Cori, and copy
+MC_lowmemory_gain_drifts_launcher.batch, so_MC_gain_drift.py and so_parameters.py to
+a folder in your $SCRATCH. Make sure you have installed s4cmb at NERSC as well.
+Then from the folder where all files are, just submit a job
+
+::
+
+    sbatch MC_lowmemory_gain_drifts_launcher.batch
+
+it should take roughly 20 minutes to complete the full 10 MC simulations.
 
 How to contribute to s4cmb?
 ===============
