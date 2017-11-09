@@ -12,13 +12,16 @@ be white, but there is a plan to add correlated noise
 (see `here <https://github.com/JulienPeloton/s4cmb/projects>`_ ).
 If you are interested, just contact me!
 
-Using s4cmb on a cluster (mpi version)
+Using s4cmb on a cluster/supercomputer (mpi version)
 ===============
+
+**Why going to a supercomputer?**
 
 All examples so far focused on very small instruments, with few bolometers.
 Of course, one wants to study current and future experiments with thousands of
-detectors, and make MC simulations. Keep calm, and use a cluster! We provide two ready-to-use Apps and their
-batch files for Cori (NERSC). Note that the amount of resource needed usually depends on
+detectors, and make MC simulations. Keep calm, and use a cluster!
+We provide two ready-to-use Apps and their batch files for Cori (NERSC).
+Note that the amount of resource needed usually depends on
 what you want to simulate. If your detector timestreams remain uncorrelated, then
 you do not need much memory (you would just load a few objects in the memory at once).
 But if you need to have access to all timestreams at once (e.g. crosstalk), you may need
@@ -29,6 +32,9 @@ requires 7000 * 4 * 3600 * 15 * 8 = 12 GB! And this is just for the timestreams
 
 Of course one can always finds clever tricks for particular cases to reduce the memory usage, but
 these cases (fully correlated vs fully uncorrelated) roughly define your bounds.
+Note that the parallelisation happens at the level of CES, that is we send different scans
+to different CPU (or group of CPU). One could benefit from openmp in fortran routines (i.e. hybrid MPI/openmp),
+but I disabled that for the moment. Contact me if you are interested in restoring that.
 
 **Submitting your first job**
 
