@@ -8,7 +8,7 @@ We provide two notebooks focusing on
 
 Note that on both examples, in addition to scanning pure CMB maps, we also
 inject noise directly in time-domain. For the moment, the noise is assumed to
-be white, but there is a plan to add correlated noise (see `here <https://github.com/JulienPeloton/s4cmb/projects>_ `). If you are interested,
+be white, but there is a plan to add correlated noise (see `here <https://github.com/JulienPeloton/s4cmb/projects>_` ). If you are interested,
 just contact me!
 
 Using s4cmb on a cluster (mpi version)
@@ -34,4 +34,4 @@ How to contribute to s4cmb?
 
 Feel free to submit issues and enhancement requests!
 In general, we appreciate the "fork-and-pull" Git workflow, as explained
-`here <https://github.com/JulienPeloton/s4cmb/blob/master/CONTRIBUTING.rst>_ `.
+`here <https://github.com/JulienPeloton/s4cmb/blob/master/CONTRIBUTING.rst>_` .
