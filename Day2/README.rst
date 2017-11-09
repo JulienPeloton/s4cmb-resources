@@ -30,7 +30,7 @@ requires 7000 * 4 * 3600 * 15 * 8 = 12 GB! And this is just for the timestreams
 Of course one can always finds clever tricks for particular cases to reduce the memory usage, but
 these cases (fully correlated vs fully uncorrelated) roughly define your bounds.
 
-** Submitting your first job **
+**Submitting your first job**
 
 Say you want to launch the simulation for gain drifts. First, connect to Cori, and copy
 MC_lowmemory_gain_drifts_launcher.batch, so_MC_gain_drift.py and so_parameters.py to
