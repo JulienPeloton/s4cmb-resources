@@ -8,7 +8,7 @@ s4cmb tutorials
 
 s4cmb
 ===============
-Systematics For Cosmic Microwave Background (`s4cmb <https://github.com/JulienPeloton/s4cmb>`_ ), is a library to
+Systematics For Cosmic Microwave Background (`s4cmb <https://github.com/JulienPeloton/s4cmb>`_), is a library to
 study instrumental systematic effects in the context of current and future
 Cosmic Microwave Background experiments.
 
