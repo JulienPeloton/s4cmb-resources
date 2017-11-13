@@ -37,4 +37,4 @@ For requests, we appreciate the "fork-and-pull" Git workflow, as explained
 Contact
 ===============
 
-If you have a request, or want to contribute, just contact me: j.peloton at sussex.ac.uk
+If you have a request, or want to contribute in a different way, just contact me: j.peloton at sussex.ac.uk
