@@ -3,9 +3,10 @@
 End-to-end examples
 ===============
 
-We provide two notebooks focusing on
+We provide three notebooks focusing on
 
-* `Simulation of gain drifts. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts.ipynb>`_
+* `Simulation of gain drifts (deep patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_deep.ipynb>`_
+* `Simulation of gain drifts (shallow patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_shallow.ipynb>`_
 * `Simulation of differential pointing. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_differential_pointing.ipynb>`_
 
 Note that on both examples, in addition to scanning pure CMB maps, we also
