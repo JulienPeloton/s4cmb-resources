@@ -1,3 +1,5 @@
+.. contents:: Table of Contents
+
 Requirements and installation
 ===============
 The pipeline is mainly written in python and it has the following dependencies:
