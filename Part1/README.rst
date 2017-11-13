@@ -72,13 +72,13 @@ Lectures
 ===============
 Day1 is organised the following:
 
-* `Lecture 01 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/s4cmb_presentation_01.ipynb>`_: presentation of the library.
-* `Lecture 02 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/s4cmb_instrument_02.ipynb>`_: how to generate an instrument.
-* `Lecture 03 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/s4cmb_scanning_strategy_03.ipynb>`_: how to generate a scanning strategy.
-* `Lecture 04 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/s4cmb_tod_04.ipynb>`_: how to generate TOD.
-* `Lecture 05 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/s4cmb_crosstalk_05.ipynb>`_: An example of instrument systematic (crosstalk).
+* `Lecture 01 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_presentation_01.ipynb>`_: presentation of the library.
+* `Lecture 02 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_instrument_02.ipynb>`_: how to generate an instrument.
+* `Lecture 03 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_scanning_strategy_03.ipynb>`_: how to generate a scanning strategy.
+* `Lecture 04 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_tod_04.ipynb>`_: how to generate TOD.
+* `Lecture 05 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_crosstalk_05.ipynb>`_: An example of instrument systematic (crosstalk).
 
-In addition, you will find an end-to-end `example <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Day1/simple_app.py>`_ that can be ran on a laptop
+In addition, you will find an end-to-end `example <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/simple_app.py>`_ that can be ran on a laptop
 
 ::
 
