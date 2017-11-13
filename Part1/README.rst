@@ -1,6 +1,6 @@
 .. contents:: **Part1: Table of Contents**
 
-Requirements and installation
+Requirements
 ===============
 The pipeline is mainly written in python and it has the following dependencies:
 
@@ -41,7 +41,7 @@ For example, just add at the end of your bashrc:
 
 ::
 
-    s4cmbPATH=/path/to/the/package
+    s4cmbPATH=/path/to/s4cmb
     export PYTHONPATH=$PYTHONPATH:$s4cmbPATH
 
 Then run the test suite and the coverage:
