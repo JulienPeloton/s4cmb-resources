@@ -1,4 +1,4 @@
-.. contents:: **Table of Contents**
+.. contents:: **Part1: Table of Contents**
 
 Requirements and installation
 ===============
