@@ -1,5 +1,3 @@
-.. contents:: **Table of Contents**
-
 How to submit your questions or requests during the bootcamp?
 ===============
 
@@ -8,7 +6,7 @@ Go to the s4cmb repo on github, and click on the corresponding buttons:
 
 .. raw:: html
 
-    <img src="https://github.com/JulienPeloton/s4cmb/blob/master/s4cmb/data/submit_an_issue.png" height="400px">
+    <img src="https://github.com/JulienPeloton/s4cmb/blob/master/s4cmb/data/submit_an_issue_or_request.png" height="400px">
 
 By doing so, requests, questions and discussions will be accessible to anyone, and more people can
 review it and help solving the problems. All questions and answers are stored so that you can also
