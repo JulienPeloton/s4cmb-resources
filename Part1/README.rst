@@ -34,6 +34,7 @@ Once you have the repo cloned on your machine, use the makefile to compile the s
 ::
 
     cd /path/to/s4cmb
+    pip install -r requirements.txt
     make
 
 Do not forget to update your PYTHONPATH to tell your machine where the code is.
