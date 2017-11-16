@@ -20,14 +20,21 @@ customized compilations (see the Makefile in s4cmb).
 
 Installation
 ===============
+The type of installation depends on what you want to do with the code:
+just using it or also developing it?
+
+**I just want to use the code**
+
 You can easily install the package using pip
 
 ::
 
     pip install s4cmb
 
-Instead for the purpose of this tutorial, we rather recommend that you fork the repo from
-the github repository and clone it to your machine (to be able to modify the code on your own).
+**In addition to use the code, I want to be a developer**
+
+For the purpose of this tutorial, we rather recommend that you fork the repo from
+the s4cmb github repository to your account and clone it to your machine (to be able to modify the code on your own).
 See `here <https://github.com/JulienPeloton/s4cmb/blob/master/CONTRIBUTING.rst>`_ for more information on how to contribute.
 Once you have the repo cloned on your machine, use the makefile to compile the source
 
