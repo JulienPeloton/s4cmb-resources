@@ -3,13 +3,14 @@
 End-to-end examples
 ===============
 
-We provide three notebooks focusing on
+We provide four notebooks focusing on
 
 * `Simulation of gain drifts (deep patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_deep.ipynb>`_
 * `Simulation of gain drifts (shallow patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_shallow.ipynb>`_
 * `Simulation of differential pointing. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_differential_pointing.ipynb>`_
+* `On the use of HWP demodulation. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_using_hwp_demodulation.ipynb>`_
 
-Note that on both examples, in addition to scanning pure CMB maps, we also
+Note that on the first three examples, in addition to scanning pure CMB maps, we also
 inject noise directly in time-domain. For the moment, the noise is assumed to
 be white, but there is a plan to add correlated noise
 (see `here <https://github.com/JulienPeloton/s4cmb/projects>`_).
