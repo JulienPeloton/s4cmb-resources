@@ -48,12 +48,6 @@ def addargs(parser):
         required=True,
         help='Tag name to identify your run. E.g. run_0_crosstalk.')
 
-    ## Only for xpure use - you do not have to care.
-    parser.add_argument(
-        '-inifile_xpure', dest='inifile_xpure',
-        default=None,
-        help='Configuration file with xpure parameter values.')
-
     ## You can also pass any new arguments, or even overwrite those
     ## from the ini file.
     parser.add_argument(
