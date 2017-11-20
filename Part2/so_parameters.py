@@ -123,7 +123,7 @@ sampling_freq = 15.
 sky_speed = 0.4
 
 ## File containing time correction to UTC
-ut1utc_fn = "/project/projectdirs/sobs/instrument_systematics/additional_files"
+ut1utc_fn = "/project/projectdirs/sobs/instrument_systematics/additional_files/ut1utc.ephem"
 
 #####################################################################
 ######################### Output sky maps ###########################
