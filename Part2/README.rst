@@ -54,7 +54,7 @@ it should take roughly 20 minutes to complete the full 10 MC simulations.
 After the job completed, you should have a folder out/ where maps and masks are
 stored.
 
-**Important thing!**
+**Important point: read input parameters**
 
 The parameters for the run are read from the parameter file (in this case, so_parameters.py).
 You can also specify directly parameters to be read in your App, via the module argparse.
