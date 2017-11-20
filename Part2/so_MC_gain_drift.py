@@ -26,10 +26,8 @@ from s4cmb.systematics import linear_function_gen
 
 from s4cmb.config_s4cmb import import_string_as_module
 
-from s4cmb.xpure import create_batch
 from s4cmb.xpure import write_maps_a_la_xpure
 from s4cmb.xpure import write_weights_a_la_xpure
-import commands
 
 ## Other packages needed
 import os
@@ -281,24 +279,14 @@ if __name__ == "__main__":
                 params.name_instrument,
                 params.name_strategy)
 
-            write_maps_a_la_xpure(sky_out_tot, name_out=name_out,
-                                  output_path='xpure/maps')
-            write_weights_a_la_xpure(sky_out_tot, name_out=name_out,
-                                     output_path='xpure/masks',
-                                     epsilon=0.08, HWP=False)
-
-            if args.inifile_xpure is not None:
-                ## Import parameters from the user parameter file
-                params_xpure = import_string_as_module(args.inifile_xpure)
-
-                batch_file = 'sim{:03d}_{}_{}_{}.batch'.format(
-                    args.sim_number,
-                    params.tag,
-                    params.name_instrument,
-                    params.name_strategy)
-                create_batch(batch_file, name_out, params, params_xpure)
-
-                qsub = commands.getoutput('sbatch ' + batch_file)
-                print(qsub)
+            write_maps_a_la_xpure(
+                sky_out_tot,
+                name_out=name_out,
+                output_path='{}/maps'.format(args.folder_out))
+            write_weights_a_la_xpure(
+                sky_out_tot,
+                name_out=name_out,
+                output_path='{}/masks'.format(args.folder_out),
+                epsilon=0.08, HWP=False)
 
     MPI.COMM_WORLD.barrier()

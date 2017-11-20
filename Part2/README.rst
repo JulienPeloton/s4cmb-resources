@@ -51,6 +51,8 @@ Then from the folder where all files are, just submit a job
     sbatch MC_lowmemory_gain_drifts_launcher.batch
 
 it should take roughly 20 minutes to complete the full 10 MC simulations.
+After the job completed, you should have a folder out/ where maps and masks are
+stored.
 
 How to contribute to s4cmb?
 ===============
