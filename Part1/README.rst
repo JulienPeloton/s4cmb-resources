@@ -78,6 +78,8 @@ The installation of s4cmb can be done in few steps:
 * Install dependencies (see requirements.txt) using Anaconda
 * Compile the source (using make in /path/s4cmb)
 
+**Use of notebooks at NERSC (not so recommended)**
+
 If you want to run jupyter notebooks, see `here <http://www.nersc.gov/users/data-analytics/data-analytics-2/jupyter-and-rstudio/>`_.
 Note that jupyter.nersc.gov doesn't source your bashrc (so you won't have by default access to your modules). For a more advanced use,
 log on to jupyter-dev.nersc.gov (however, frequent errors occur... Especially conflict with your $PYTHONPATH and $JUPYTER_PATH).
@@ -88,9 +90,6 @@ In addition, to display images, you should add
     %matplotlib inline
 
 at the beginning of each notebook.
-
-**Alternative use of notebooks at NERSC**
-
 Alternatively, you can execute notebooks at NERSC directly, using the command
 
 ::
