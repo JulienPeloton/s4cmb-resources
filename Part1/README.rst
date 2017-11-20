@@ -146,3 +146,6 @@ or using 4 processors (change mpirun with your favourite command)
 ::
 
     mpirun -n 4 python simple_app.py -inifile simple_parameters.py -tag test
+
+The script should exit with a message: All OK! Greetings from processor X/Y!
+and you have a folder out/ containing maps and masks.

@@ -212,11 +212,11 @@ if __name__ == "__main__":
                                      params.name_instrument,
                                      params.name_strategy)
         write_maps_a_la_xpure(sky_out_tot, name_out=name_out,
-                              output_path='xpure/maps')
+                              output_path='out/maps')
         write_weights_a_la_xpure(sky_out_tot, name_out=name_out,
-                                 output_path='xpure/masks',
+                                 output_path='out/masks',
                                  epsilon=0.08, HWP=False)
 
-    print("All OK! Greetings from processor {}/{}!".format(rank+1, size))
-
     MPI.COMM_WORLD.barrier()
+
+    print("All OK! Greetings from processor {}/{}!".format(rank+1, size))
