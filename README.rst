@@ -14,6 +14,10 @@ Cosmic Microwave Background experiments.
 
 Structure of the tutorial
 ===============
+
+The purpose of this tutorial is to learn how to use s4cmb, that is simulating maps
+of the CMB in the presence of instrumental systematic effects.
+
 * `Part 1 <https://github.com/JulienPeloton/s4cmb-resources/tree/master/Part1>`_: installation + presentation of the code + my first App.
 * `Part 2 <https://github.com/JulienPeloton/s4cmb-resources/tree/master/Part2>`_: Digging into the library: more complex cases.
 
