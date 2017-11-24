@@ -1,2 +1,12 @@
 .ipynb_checkpoints/
 *.pyc
+*.sty
+*.log
+*.aux
+*.out
+*.gz
+*log
+*.tex
+*.toc
+*.nav
+*.snm
