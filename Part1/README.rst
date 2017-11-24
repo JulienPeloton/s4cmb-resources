@@ -126,7 +126,7 @@ Then create a new container and run an interactive session by just running
 
 Lectures
 ===============
-Day1 is organised the following:
+Part 1 is organised the following:
 
 * `Lecture 01 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_presentation_01.ipynb>`_: presentation of the library.
 * `Lecture 02 <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part1/s4cmb_instrument_02.ipynb>`_: how to generate an instrument.
