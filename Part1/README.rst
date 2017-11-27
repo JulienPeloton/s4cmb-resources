@@ -101,7 +101,7 @@ paths of jupyter-dev, you will not be able to connect. If you encounter such pro
 ::
 
     export NERSC_HOST=`/usr/common/usg/bin/nersc_host`
-    if [ ${NERSC_HOST} != "cori19" ]; then
+    if [ ${NERSC_HOST} == "cori19" ]; then
         export NERSC_HOST="toto"
     fi
 
