@@ -82,31 +82,36 @@ The installation of s4cmb can be done in few steps:
 If you want to run jupyter notebooks, see `here <http://www.nersc.gov/users/data-analytics/data-analytics-2/jupyter-and-rstudio/>`_.
 Note that jupyter.nersc.gov doesn't source your bashrc (so you won't have by default access to your modules). For a more advanced use,
 log on to jupyter-dev.nersc.gov (however, frequent errors occur... Especially conflict with your $PYTHONPATH and $JUPYTER_PATH).
-In addition, to display images, you should add
+In addition, to display images you probably need to add
 
 ::
 
     %matplotlib inline
 
 at the beginning of each notebook.
-Alternatively, you can execute notebooks at NERSC directly, using the command
+
+**If you cannot connect to jupyter-dev (failure to spawn)**
+
+When you try to connect to jupyter-dev, it will read your JUPYTER_PATH.
+If for some reasons, there are packages in your path in conflict with the default
+paths of jupyter-dev, you will not be able to connect. If you encounter such problem, here is a solution:
+
+* Edit your .bashrc.ext (or whatever file where you declare your paths) and reorganise it the following:
 
 ::
 
-    jupyter nbconvert --to <desired_output_format> <your_notebook>.ipynb
+    export NERSC_HOST=`/usr/common/usg/bin/nersc_host`
+    if [ ${NERSC_HOST} != "cori19" ]; then
+        export NERSC_HOST="toto"
+    fi
 
-Output formats can be
+    if [ ${NERSC_HOST} != "cori" ]; then
+        <all your declarations and module loads>
+    fi
 
-::
-
-    ['custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'rst', 'script', 'slides']
-
-See the various options using
-
-::
-
-    jupyter-nbconvert --help
-
+* By doing so, if you connect to jupyter-dev (cori19), you won't load all your custom packages. However, if you connect to cori, you will load everything as usual.
+* Then clone the package `Ipython_Kernel_NERSC <https://github.com/JulienPeloton/Ipython_Kernel_NERSC>`_ and create a kernel with all your paths.
+* Connect to https://jupyter-dev.nersc.gov/hub/login and create a notebook with the kernel you just created (which contains all your favourite paths).
 
 Working with Docker
 ===============
