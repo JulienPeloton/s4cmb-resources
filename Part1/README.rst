@@ -105,7 +105,7 @@ paths of jupyter-dev, you will not be able to connect. If you encounter such pro
         export NERSC_HOST="toto"
     fi
 
-    if [ ${NERSC_HOST} != "cori" ]; then
+    if [ ${NERSC_HOST} == "cori" ]; then
         <all your declarations and module loads>
     fi
 
