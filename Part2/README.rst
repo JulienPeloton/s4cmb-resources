@@ -3,12 +3,13 @@
 End-to-end examples
 ===============
 
-We provide five notebooks focusing on
+We provide six notebooks focusing on
 
 * `Simulation of gain drifts (deep patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_deep.ipynb>`_
 * `Simulation of gain drifts (shallow patch). <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_shallow.ipynb>`_
 * `A method to deproject spurious signals. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_gain_drifts_deep_deprojection.ipynb>`_
 * `Simulation of differential pointing. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_differential_pointing.ipynb>`_
+* `Simulation of beam ellipticity. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_beam_ellipticity.ipynb>`_
 * `On the use of HWP demodulation. <https://github.com/JulienPeloton/s4cmb-resources/blob/master/Part2/s4cmb_using_hwp_demodulation.ipynb>`_
 * coming: estimating the lensing potential via LensIt.
 
