@@ -5,6 +5,9 @@
 ## Run ID - this will be used to create names
 name_instrument = "SO"
 
+## Standard TES or dichroic.
+mode = 'standard'
+
 #####################################################################
 ######################### Input sky #################################
 #####################################################################
@@ -25,6 +28,7 @@ do_pol = True
 ## No effect if you provide fits file with maps instead of the CAMB file.
 ## /!\ this is more for test purposes /!\
 fwhm_in = 0.0
+fwhm_in2 = None
 nside_in = None
 map_seed = None
 
@@ -35,6 +39,10 @@ no_quleak = False
 # Set it to True if you are reading a map in Galactic coordinate.
 # (Planck maps for example).
 ext_map_gal = False
+
+# Set it to True if you want to compute derivatives
+## of the input temperature map.
+compute_derivatives = False
 
 #####################################################################
 ######################### Instrument ################################
@@ -56,6 +64,9 @@ fp_size = 60.
 # beams_large = {'27':9, '39':6.6, '90':2.8, '150':1.8, '220':1.2, '280':1}
 # beams_small = {'27':91, '39':66, '90':28, '150':18, '220':12, '280':10}
 fwhm = 1.8
+
+## For dichroic
+fwhm2 = None
 
 ## Seed used to generate angle of rotation of beam axes.
 beam_seed = 58347
@@ -83,11 +94,13 @@ angle_hwp = 0.
 ## noise level in [u]K.sqrt(s). Careful the units has to be the same as
 ## the input map! Note also that it corresponds to the polarisation level.
 array_noise_level = 2.273
+array_noise_level2 = 2.273
 
 ## Seed used to generate random numbers to simulate noise.
 ## From this single seed, we generate a list of seeds
 ## for all detectors. Has an effect only if array_noise_level is provided.
 array_noise_seed = 487587
+array_noise_seed2 = 487587
 
 #####################################################################
 ######################### Scanning strategy #########################
